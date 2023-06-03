@@ -5,9 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebApplication1MMVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/WebApplication1MMVC.styles.css" asp-append-version="true" />
 </head>
+<style>
+    h1{
+        display: inline-block;
+        color: black;
+        border: 2px;
+        margin: 20px;
+        padding: 20px;
+        font-weight: bold;
+        font-family: Arial;
+        text-decoration: underline;
+
+
+    }
+    p{
+        color: gray;
+        background-image: url('img src="~/img/Eselink.jpg.jpg"')
+    }
+
+  /*  h2 {
+        display: inline-block;
+        color: black;
+        border: 2px;
+        margin: 20px;
+        padding: 20px;
+        font-weight: bold;
+        font-family: Arial;
+        text-decoration: underline;
+    }
+
+    p {
+        color: darkgray;
+        background-image: url('img src="~/img/Eselinkdecor.jpg.jpg"')
+    }*/
+</style>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -23,20 +57,43 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">History</a>
                         </li>
+                         <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" asp-controller="Home" asp-action="History" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="History" asp-action="History">About</a></li>
+                            <li><a class="dropdown-item" asp-controller="History" asp-action="privacy">Google</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Program">Program</a>
-                        </li>
+                        </li>                        
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Follow_us">Follow_us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Info">Info</a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" asp-controller="Home" asp-action="follow_us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="Index">Home page</a></li>
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="privacy">Google</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                         </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Product">Product</a>
                         </li>
+                         <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" asp-controller="Home" asp-action="Paroduct" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="Product">About</a></li>
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="privacy">Google</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
